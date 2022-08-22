@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: block;
+  justify-content: center;
+}
+
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-family: "Silkscreen", cursive;
+  background: url(../img/back-roxo.jpg) no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #680e78;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: #921ba7;
+  transition: all 0.2s ease;
+}
+
+.home {
+  font-size: 20px;
+  color: #eee;
+  text-decoration: none;
+  margin-left: 120px;
+}
+
+.sobre {
+  font-size: 20px;
+  color: #eee;
+  text-decoration: none;
+  margin-left: 113px;
+}
+
+.coin-left {
+  height: 50px;
+}
+
+.coin-right {
+  height: 50px;
+}
+
+.welcome {
+  display: flex;
+  color: #eee;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.box {
+  background: #eee;
+  padding: 4rem;
+  margin-top: 5px;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0, 16);
+  color: #aeaeae;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 90px;
+  margin-bottom: 2rem;
+}
+
+.box span {
+  font-size: 24px;
+}
+
+.box p {
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociais li {
+  margin-right: 1rem;
+}
+
+.insta {
+  width: 30px;
+}
+
+.whats {
+  width: 30px;
+}
+
+.linke {
+  width: 30px;
+}

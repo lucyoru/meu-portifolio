@@ -1,4 +1,22 @@
 
+@keyframes blink {
+  from {
+    border-right-color: rgba(104, 14, 120, 75);
+  }
+  to {border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.6em;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -81,13 +99,20 @@ a:hover {
   color: #aeaeae;
   border-radius: 50px;
   text-align: center;
+  width: 23rem;
 }
 
 .profile {
   width: 200px;
   border-radius: 50%;
-  margin-left: 90px;
+  margin-left: 85px;
   margin-bottom: 2rem;
+}
+
+.line {
+  border-right: 2px solid rgba(104, 14, 120, 75);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .box span {
@@ -119,4 +144,8 @@ a:hover {
 
 .linke {
   width: 30px;
+}
+
+.typing {
+  animation: blink 500ms steps(40) infinite normal, typing 3s steps(40) 1s normal;
 }

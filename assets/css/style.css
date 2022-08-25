@@ -1,22 +1,3 @@
-
-@keyframes blink {
-  from {
-    border-right-color: rgba(104, 14, 120, 75);
-  }
-  to {border-right-color: transparent;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 11.6em;
-  }
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -28,10 +9,10 @@ img {
 }
 
 header {
-  display: block;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem 0;
 }
-
 
 body {
   font-family: "Press Start 2P", cursive;
@@ -45,107 +26,92 @@ body {
   height: 100vh;
 }
 
-h1 {
-  color: #680e78;
-}
-
 li {
   list-style: none;
 }
 
-a:hover {
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu a {
+  font-size: 1.25rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.menu a:hover {
   color: #921ba7;
   transition: all 0.2s ease;
 }
 
-.home {
-  font-size: 20px;
-  color: #eee;
-  text-decoration: none;
-  margin-left: 120px;
-}
-
-.sobre {
-  font-size: 20px;
-  color: #eee;
-  text-decoration: none;
-  margin-left: 113px;
-}
-
-.coin-left {
-  height: 50px;
-}
-
-.coin-right {
+.coin {
   height: 50px;
 }
 
 .welcome {
   display: flex;
   color: #eee;
-  margin-top: 10px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: normal;
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background: #eee;
   padding: 4rem;
-  margin-top: 5px;
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0, 16);
+  box-shadow: 2px 2px 16px rgb(0 0 0 / 60%);
   color: #aeaeae;
-  border-radius: 50px;
-  text-align: center;
+  border-radius: 3.125rem;
   width: 23rem;
 }
 
-.profile {
-  width: 200px;
-  border-radius: 50%;
-  margin-left: 85px;
+.box .title {
+  font-size: 2.25rem;
+}
+
+.image-container {
+  width: 12.5rem;
   margin-bottom: 2rem;
 }
 
-.line {
-  border-right: 2px solid rgba(104, 14, 120, 75);
-  white-space: nowrap;
-  overflow: hidden;
+.image-container img {
+  max-width: 100%;
+  border-radius: 50%;
 }
 
-.box span {
-  font-size: 24px;
+.box .title {
+  color: #680e78;
 }
 
-.box p {
-  font-size: 18px;
-  margin-top: 2rem;
+.box .address {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.box .occupations {
+  font-size: 1.125rem;
   margin-bottom: 3rem;
 }
 
-.redes-sociais {
+.social-media {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
-.redes-sociais li {
-  margin-right: 1rem;
+.social-media li {
+  width: 1.875rem;
 }
 
-.insta {
-  width: 30px;
+.social-media li a img:hover {
+  filter: grayscale(61%) brightness(50%) sepia(50%) hue-rotate(-100deg)
+    saturate(619%) contrast(1);
 }
 
-.whats {
-  width: 30px;
-}
-
-.linke {
-  width: 30px;
-}
-
-.typing {
-  animation: blink 500ms steps(40) infinite normal, typing 3s steps(40) 1s normal;
+.social-media li a img {
+  max-width: 100%;
 }

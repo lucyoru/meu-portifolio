@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Luciano Rodrigues" />
     <title>Luciano Rodrigues</title>
+    <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,64 +18,47 @@
   </head>
   <body>
     <header>
-        <h1 class="welcome"><img class="coin-left" src="./assets/img/moeda.gif" alt="moeda"> Bem Vindo <img class="coin-right" src="./assets/img/moeda.gif" alt=""></h1>
-      <ul>
-        <li><a class="home" href="#home">Home</a></li>
-        <li><a class="sobre" href="#sobre">Sobre</a></li>
+      <div class="welcome">
+        <img class="coin" src="./assets/img/moeda.gif" alt="moeda" />
+        <h1 class="title">Bem Vindo</h1>
+        <img class="coin" src="./assets/img/moeda.gif" alt="moeda" />
+      </div>
+      <ul class="menu">
+        <li><a class="menu-btn" href="#home">Home</a></li>
+        <li><a class="menu-btn" href="#sobre">Sobre</a></li>
       </ul>
     </header>
 
-    <main>
-      <div class="box">
-        <img class="profile profile-margin" src="./assets/img/icon.png" alt="profile" />
-        <h1 class="line typing">Luciano Rodrigues</h1>
-        <span>Brasília, Brazil</span>
-        <p>WEB DEVELOPER | MUSICIAN</p>
-        <ul class="redes-sociais">
-          <li>
-            <a href="https://www.instagram.com/lucyoruu/"
-              ><img
-                class="insta"
-                src="./assets/img/instagram.svg"
-                alt="instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="https://wa.me/5561999876436"
-              ><img
-                class="whats"
-                src="./assets/img/whatsapp.svg"
-                alt="whatsapp"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/luciano-rodrigues-237444206/"
-              ><img
-                class="linke"
-                src="./assets/img/linkedin.svg"
-                alt="linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/lucyoru"
-              ><img class="linke" src="./assets/img/github.svg" alt="github"
-            /></a>
-          </li>
-        </ul>
+    <div class="box">
+      <div class="image-container">
+        <img src="./assets/img/icon.png" alt="profile" />
       </div>
-
-      <div>
-        <ul>
-          <li>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </li>
-        </ul>
-      </div>
-    </main>
-
-    <footer></footer>
+      <h1 class="title typing-animation">Luciano Rodrigues</h1>
+      <div class="address">Brasília, Brazil</div>
+      <div class="occupations">WEB DEVELOPER | MUSICIAN</div>
+      <ul class="social-media">
+        <li>
+          <a target="_blank" href="https://www.instagram.com/lucyoruu/">
+            <img src="./assets/img/instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://wa.me/5561999876436">
+            <img src="./assets/img/whatsapp.svg" alt="whatsapp" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/luciano-rodrigues-237444206/">
+            <img src="./assets/img/linkedin.svg" alt="linkedin" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/lucyoru">
+            <img src="./assets/img/github.svg" alt="github" />
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>

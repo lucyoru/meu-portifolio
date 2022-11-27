@@ -1,6 +1,6 @@
 @keyframes blink {
   from {
-    border-right-color: rgba(104, 14, 120, 75);
+    border-right-color: #5C94FC;;
   }
   to {
     border-right-color: transparent;
@@ -20,7 +20,7 @@
   animation: blink 500ms steps(40) infinite normal,
     typing 3s steps(40) 1s normal;
 
-  border-right: 2px solid rgba(104, 14, 120, 75);
+  border-right: 2px solid #5C94FC;;
   white-space: nowrap;
   overflow: hidden;
 }

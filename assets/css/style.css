@@ -17,7 +17,7 @@ header {
 body {
   font-family: "Press Start 2P", cursive;
   font-family: "Silkscreen", cursive;
-  background: url(../img/back-roxo.jpg) no-repeat top center;
+  background: url(../img/back-mario.gif) no-repeat left center;
   background-attachment: fixed;
   background-size: cover;
   display: grid;
@@ -30,6 +30,12 @@ li {
   list-style: none;
 }
 
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -40,20 +46,36 @@ li {
   font-size: 1.25rem;
   color: #eee;
   text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .menu a:hover {
-  color: #921ba7;
   transition: all 0.2s ease;
+  -webkit-filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
 }
 
 .coin {
   height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome {
   display: flex;
   color: #eee;
+}
+
+.home-li {
+  display: flex;
+  flex-direction: row;
+}
+
+.sobre-li {
+  display: flex;
+  flex-direction: row;
 }
 
 .box {
@@ -81,10 +103,17 @@ li {
 .image-container img {
   max-width: 100%;
   border-radius: 50%;
+  transition: all 1s;
+  cursor: grab;
+}
+
+.image-container img:hover {
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 .box .title {
-  color: #680e78;
+  color: #5c94fc;
 }
 
 .box .address {
@@ -108,10 +137,16 @@ li {
 }
 
 .social-media li a img:hover {
-  filter: grayscale(61%) brightness(50%) sepia(50%) hue-rotate(-100deg)
-    saturate(619%) contrast(1);
+  filter: invert(61%) sepia(27%) saturate(7298%) hue-rotate(199deg)
+    brightness(103%) contrast(97%);
+  color: #5c94fc;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .social-media li a img {
   max-width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
 }

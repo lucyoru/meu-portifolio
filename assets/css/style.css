@@ -34,6 +34,8 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: #eee;
+  font-size: 1rem;
 }
 
 .menu {
@@ -43,7 +45,7 @@ li {
 }
 
 .menu a {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #eee;
   text-decoration: none;
   transition: all 0.5s;
@@ -57,15 +59,10 @@ li {
 }
 
 .coin {
-  height: 50px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.welcome {
-  display: flex;
-  color: #eee;
 }
 
 .home-li {
@@ -93,6 +90,7 @@ li {
 
 .box .title {
   font-size: 2.25rem;
+  color: #5c94fc;
 }
 
 .image-container {
@@ -110,10 +108,6 @@ li {
 .image-container img:hover {
   -webkit-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
-}
-
-.box .title {
-  color: #5c94fc;
 }
 
 .box .address {

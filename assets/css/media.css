@@ -7,50 +7,74 @@
     margin: 0;
     padding: 0;
   }
-  
+
   img {
     display: block;
     max-width: 100%;
   }
-  
+
   header {
     display: flex;
     flex-direction: column;
-    margin: 3rem 0;
     margin-bottom: 2.5rem;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: double 5px rgba(255, 255, 255, 0.452);
   }
-  
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   body {
     font-family: "Press Start 2P", cursive;
     font-family: "Silkscreen", cursive;
     background: url(../img/back-mario.gif) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
   }
-  
+
   li {
     list-style: none;
   }
-  
+
+  section {
+    min-height: 100vh;
+  }
+
   .welcome {
     display: flex;
     flex-direction: row;
-    justify-content: center;    
-    font-size: 1.2rem;
+    justify-content: center;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: #eee;
+    margin-top: 2rem;
+    padding: 0;
   }
-  
+
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
   }
-  
+
   .menu a {
     font-size: 1.3rem;
     color: #eee;
@@ -58,88 +82,88 @@
     transition: all 0.5s;
     cursor: pointer;
   }
-  
+
   .menu a:hover {
     transition: all 0.2s ease;
     -webkit-filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
   }
-  
+
   .coin {
     height: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .home-li {
     display: flex;
     flex-direction: row;
   }
-  
+
   .sobre-li {
     display: flex;
     flex-direction: row;
   }
-  
+
   .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
     background: #eee;
+    margin-top: 7rem;
     padding: 4rem;
     box-shadow: 2px 2px 16px rgb(0 0 0 / 60%);
     color: #aeaeae;
     border-radius: 3.125rem;
     width: 13rem;
   }
-  
+
   .box .title {
     font-size: 1.5rem;
   }
-  
+
   .image-container {
     width: 9rem;
     margin-bottom: 2rem;
   }
-  
+
   .image-container img {
     max-width: 100%;
     border-radius: 50%;
     transition: all 1s;
     cursor: grab;
   }
-  
+
   .image-container img:hover {
     -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
   }
-  
+
   .box .title {
     color: #5c94fc;
   }
-  
+
   .box .address {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
-  
+
   .box .occupations {
     font-size: 0.8rem;
     margin-bottom: 3rem;
   }
-  
+
   .social-media {
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .social-media li {
     width: 1.875rem;
   }
-  
+
   .social-media li a img:hover {
     filter: invert(61%) sepia(27%) saturate(7298%) hue-rotate(199deg)
       brightness(103%) contrast(97%);
@@ -148,7 +172,7 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  
+
   .social-media li a img {
     max-width: 100%;
     transition: all 0.5s;
@@ -165,62 +189,83 @@
     margin: 0;
     padding: 0;
   }
-  
+
   img {
     display: block;
     max-width: 100%;
   }
-  
+
   header {
     margin-bottom: 4.5rem;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: double 5px rgba(255, 255, 255, 0.452);
   }
-  
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   body {
     font-family: "Press Start 2P", cursive;
     font-family: "Silkscreen", cursive;
     background: url(../img/back-mario.gif) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
   }
-  
+
   li {
     list-style: none;
   }
-  
+
+  section {
+    min-height: 100vh;
+  }
+
   .welcome {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     color: #eee;
-    margin-top: 4rem;
-    margin-bottom: 15px;
+    margin-top: 3rem;
+    padding: 0;
   }
-  
+
   .menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 2rem;
   }
-  
+
   .menu a {
     font-size: 1.5rem;
     color: #eee;
     text-decoration: none;
     transition: all 0.5s;
     cursor: pointer;
+    display: block;
   }
-  
+
   .menu a:hover {
     transition: all 0.2s ease;
     -webkit-filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 4px 1.5px rgba(0, 0, 0, 0.5));
   }
-  
+
   .coin {
     height: 40px;
     display: flex;
@@ -228,21 +273,11 @@
     align-items: center;
   }
 
-  .home-li {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .sobre-li {
-    display: flex;
-    flex-direction: row;
-  }
-  
   .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     background: #eee;
     padding: 4rem;
     box-shadow: 2px 2px 16px rgb(0 0 0 / 60%);
@@ -251,36 +286,36 @@
     width: 18rem;
     height: 30rem;
   }
-  
+
   .box .title {
     font-size: 1.9rem;
   }
-  
+
   .image-container {
     width: 12rem;
     margin-bottom: 2rem;
   }
-  
+
   .box .address {
     font-size: 1.3rem;
     margin-bottom: 2rem;
   }
-  
+
   .box .occupations {
     font-size: 1.1rem;
     margin-bottom: 3rem;
   }
-  
+
   .social-media {
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .social-media li {
     width: 2.5rem;
   }
-  
+
   .social-media li a img:hover {
     filter: invert(61%) sepia(27%) saturate(7298%) hue-rotate(199deg)
       brightness(103%) contrast(97%);
@@ -289,7 +324,7 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  
+
   .social-media li a img {
     max-width: 100%;
     transition: all 0.5s;

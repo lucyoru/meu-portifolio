@@ -8,10 +8,16 @@ img {
   max-width: 100%;
 }
 
-header {
+nav {
+  width: 50%;
+}
+
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  margin: 0.625rem 0;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 body {
@@ -20,10 +26,39 @@ body {
   background: url(../img/back-mario.gif) no-repeat left center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+header {
+  width: 100%;
+  background: rgba(196, 196, 196, 0.11);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border-bottom: double 5px rgba(255, 255, 255, 0.452);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.centralizador {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main {
   display: grid;
   align-items: center;
   justify-items: center;
   height: 100vh;
+}
+
+section {
+  min-height: 100vh;
 }
 
 li {
@@ -32,16 +67,13 @@ li {
 
 .welcome {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   color: #eee;
   font-size: 1rem;
+  padding: 15px 0;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .menu a {
@@ -50,6 +82,7 @@ li {
   text-decoration: none;
   transition: all 0.5s;
   cursor: pointer;
+  display: block;
 }
 
 .menu a:hover {
@@ -65,21 +98,18 @@ li {
   align-items: center;
 }
 
-.home-li {
-  display: flex;
-  flex-direction: row;
-}
-
-.sobre-li {
-  display: flex;
-  flex-direction: row;
+#home {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-top: 3.5rem;
   background: #eee;
   padding: 4rem;
   box-shadow: 2px 2px 16px rgb(0 0 0 / 60%);

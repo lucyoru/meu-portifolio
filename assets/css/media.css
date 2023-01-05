@@ -41,14 +41,6 @@
     align-items: center;
   }
 
-  body {
-    font-family: "Press Start 2P", cursive;
-    font-family: "Silkscreen", cursive;
-    background: url(../img/back-mario.gif) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
   li {
     list-style: none;
   }
@@ -219,14 +211,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  body {
-    font-family: "Press Start 2P", cursive;
-    font-family: "Silkscreen", cursive;
-    background: url(../img/back-mario.gif) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
   }
 
   li {

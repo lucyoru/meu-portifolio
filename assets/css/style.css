@@ -21,11 +21,17 @@ nav ul {
 }
 
 body {
-  font-family: "Press Start 2P", cursive;
   font-family: "Silkscreen", cursive;
-  background: url(../img/back-mario.gif) no-repeat left center;
-  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  background: url(../img/back-mario.gif) no-repeat center;
   background-size: cover;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
 }
 
 header {

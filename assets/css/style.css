@@ -1,3 +1,53 @@
+/* icones social media */
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?t6wasa");
+  src: url("../fonts/icomoon.eot?t6wasa#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?t6wasa") format("truetype"),
+    url("../fonts/icomoon.woff?t6wasa") format("woff"),
+    url("../fonts/icomoon.svg?t6wasa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+  color: #aeaeae;
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
+  color: #aeaeae;
+}
+
+.icon-github:before {
+  content: "\eab0";
+  color: #aeaeae;
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+  color: #aeaeae;
+}
+
+/* html principal */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +68,14 @@ nav ul {
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
+}
+
+section {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -61,14 +119,6 @@ header {
   align-items: center;
   justify-items: center;
   height: 100vh;
-}
-
-section {
-  min-height: 100vh;
-}
-
-li {
-  list-style: none;
 }
 
 .welcome {
@@ -159,24 +209,20 @@ li {
 .social-media {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.7rem;
 }
 
 .social-media li {
-  width: 1.875rem;
-}
-
-.social-media li a img:hover {
-  filter: invert(61%) sepia(27%) saturate(7298%) hue-rotate(199deg)
-    brightness(103%) contrast(97%);
-  color: #5c94fc;
-  transition: all 0.2s ease;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-.social-media li a img {
-  max-width: 100%;
   transition: all 0.5s;
   cursor: pointer;
+  font-size: 2rem;
+}
+
+.social-media li a {
+  text-decoration: none;
+}
+
+.social-media li:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }

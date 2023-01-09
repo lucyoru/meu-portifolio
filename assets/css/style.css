@@ -1,53 +1,3 @@
-/* icones social media */
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?t6wasa");
-  src: url("../fonts/icomoon.eot?t6wasa#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?t6wasa") format("truetype"),
-    url("../fonts/icomoon.woff?t6wasa") format("woff"),
-    url("../fonts/icomoon.svg?t6wasa#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-instagram:before {
-  content: "\ea92";
-  color: #aeaeae;
-}
-
-.icon-whatsapp:before {
-  content: "\ea93";
-  color: #aeaeae;
-}
-
-.icon-github:before {
-  content: "\eab0";
-  color: #aeaeae;
-}
-
-.icon-linkedin2:before {
-  content: "\eaca";
-  color: #aeaeae;
-}
-
-/* html principal */
-
 * {
   margin: 0;
   padding: 0;
@@ -63,11 +13,8 @@ nav {
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 section {
@@ -92,26 +39,15 @@ body::before {
   z-index: -1;
 }
 
-header {
-  width: 100%;
-  background: rgba(196, 196, 196, 0.11);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  border-bottom: double 5px rgba(255, 255, 255, 0.452);
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.centralizador {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.11);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  border-bottom: double 5px rgba(255, 255, 255, 0.452);
 }
 
 #main {
@@ -124,12 +60,12 @@ header {
 .welcome {
   display: flex;
   color: #eee;
-  font-size: 1rem;
-  padding: 15px 0;
+  margin: 15px 10rem;
 }
 
 .menu {
   display: flex;
+  gap: 3rem;
 }
 
 .menu a {
@@ -216,13 +152,31 @@ header {
   transition: all 0.5s;
   cursor: pointer;
   font-size: 2rem;
+  color: #aeaeae;
 }
 
 .social-media li a {
   text-decoration: none;
+  color: inherit;
 }
 
 .social-media li:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+
+.social-media .icon-insta:hover {
+  color: #f213a8;
+}
+
+.social-media .icon-wpp:hover {
+  color: #1BD741;
+}
+
+.social-media .icon-linke:hover {
+  color: #0A66C2;
+}
+
+.social-media .icon-git:hover {
+  color: #161B22;
 }
